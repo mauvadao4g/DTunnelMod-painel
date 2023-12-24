@@ -1,0 +1,62 @@
+VIDEO TUTORIAL
+https://www.youtube.com/watch?v=94iAePhRmUQ
+
+Link do github:
+https://github.com/DTunnelMod/painel
+
+
+
+
+Comando NVM:
+#Instalar Vpm
+wget qO https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash && export NVM_DIR="$HOME/.nvm" && [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" && [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion" && nvm install 16 && apt install git screen -y
+
+
+# Baixar os Arquivos do painel DtunelMOd
+git clone https://github.com/DTunnelMod/painel.git
+
+# Entrando na pasta do PainelMod
+cd painel 
+
+
+ node -e "console.log(require('crypto').randomBytes(256).toString('base64'));"
+
+Edite o arquivo '.envi.example'
+PORT=                // 3000
+NODE_ENV=            // "production"
+DATABASE_URL=        // "file:./database.db"
+CSRF_SECRET=         //
+JWT_SECRET_KEY=      //
+JWT_SECRET_REFRESH=  //
+
+
+1. Instale as dependências:
+  npm install
+ 
+
+2. Gerar artefactos do prisma
+   npx prisma generate
+
+
+3. Crie as migrations do banco de dados
+    npx prisma migrate deploy
+
+
+4. Rodando o projeto
+   apt install screen -y
+    screen -S dt
+     npm run start
+
+5. Acessar o Painel
+  http://localhost:3000
+
+
+
+
+
+
+
+
+DTUNNEL - COMO ALTERAR AS CREDENCIAIS
+https://www.youtube.com/watch?v=hz2zCdgvRzA&t=2s
+
